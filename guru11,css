@@ -1,0 +1,152 @@
+/* Common CSS starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: my-font;
+    overflow-x: hidden;
+   
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.relative {
+    position: relative;
+   
+}
+/* Common CSS Ends */ 
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ab1146;
+    margin: 0;
+    padding: 1em;
+}
+.icons a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.icons a .fa {
+    padding: 0 .3em;
+}
+.box {
+    height: auto;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    
+}
+.box div {
+    margin: .2em;
+}
+.box a {
+    color: #fff;
+    font-size: 10rem;
+}
+.box p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu  li {
+    padding: 0 1em;
+}
+.nav-menu  li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.mobile-menu{
+    display: none;
+}
+.img-grid {
+    display: flex;
+    align-items: center;
+}
+.inner-img-grid {
+    margin: .5em;
+}
+/* h1{
+    font-size: 10rem;
+}
+h2 {
+    display: none;
+}
+@media(max-width:768px){
+    html{
+        font-size: 60%;
+    }
+    h1{
+       
+        color: blue;
+    }
+    h2{
+        display: block;
+    }
+} */
+
+/* @media(min-width:700px){
+    .mini{
+        color: red;
+    }
+}
+@media(max-width:690px){
+    .mini{
+        color:green;
+    }
+} */
+
+
+/* Header Menu Design with media queries */
+
+
+
+@media(max-width:768px){
+    .img-grid {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .inner-img-grid img {
+        width: 100%!important;
+    }
+    .inner-img-grid {
+        margin: .5em;
+        width: 100%;
+    }
+    html{
+      font-size: 80%;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .logo img{
+        width: 70%;
+    }
+}
