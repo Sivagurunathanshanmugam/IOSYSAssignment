@@ -1,0 +1,90 @@
+@import './common','./mixin';
+h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: xxx-large;
+}
+p{
+    text-align: center;
+    padding: 0 22em 0 22em;   
+}
+.content1{
+    @include display;
+    margin-left: 8%;
+    margin-right: 8%;
+    .footer1{
+        width: 25rem;
+        height: 20rem;
+        position: relative;
+        img{
+            width: 25rem;
+        height: 20rem;
+        }
+        div{
+            width: 25rem;
+            height: 20rem;
+            background-color: #06a706bd;
+            position: absolute;
+            top: 0%; 
+        }
+        h4{
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%,-50%);
+    color: white;
+    top: 10%;
+    left: 48%
+        }
+        p{
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 40%;
+          left: 50%;
+          padding: 1em .001em 1em .001em;
+          color: white;
+        }
+        span{
+            position: absolute;
+            transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
+            color: yellow;
+        }
+
+    }
+    .footer2{
+        @extend .footer1;
+    }
+    .footer3{
+        @extend .footer1;   
+    }
+    .footer1 div:hover{
+        background-color: black;
+    }
+}
+.content2{
+    margin-top: 2%;
+    @extend .content1;
+}
+@media(max-width:768px){
+    h1{
+        margin-left: 0%;
+        padding: 0;
+        }
+        p{
+            padding: 0%;
+        }
+    .content1,.content2{
+        flex-wrap: wrap; 
+        .footer1,.footer2,.footer3{
+            width: 100%;
+            margin-top: 8%;
+            img{
+                width: 100%; 
+            }
+            div{
+                width: 100%; 
+            }
+        }  
+    }
+}

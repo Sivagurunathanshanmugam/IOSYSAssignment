@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: my-font;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.relative {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: xxx-large;
+}
+
+p {
+  text-align: center;
+  padding: 0 22em 0 22em;
+}
+
+.content1, .content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.content1 .footer1, .content2 .footer1, .content1 .footer3, .content2 .footer3, .content1 .footer2, .content2 .footer2 {
+  width: 25rem;
+  height: 20rem;
+  position: relative;
+}
+.content1 .footer1 img, .content2 .footer1 img, .content1 .footer3 img, .content2 .footer3 img, .content1 .footer2 img, .content2 .footer2 img {
+  width: 25rem;
+  height: 20rem;
+}
+.content1 .footer1 div, .content2 .footer1 div, .content1 .footer3 div, .content2 .footer3 div, .content1 .footer2 div, .content2 .footer2 div {
+  width: 25rem;
+  height: 20rem;
+  background-color: #06a706bd;
+  position: absolute;
+  top: 0%;
+}
+.content1 .footer1 h4, .content2 .footer1 h4, .content1 .footer3 h4, .content2 .footer3 h4, .content1 .footer2 h4, .content2 .footer2 h4 {
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  top: 10%;
+  left: 48%;
+}
+.content1 .footer1 p, .content2 .footer1 p, .content1 .footer3 p, .content2 .footer3 p, .content1 .footer2 p, .content2 .footer2 p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  padding: 1em 0.001em 1em 0.001em;
+  color: white;
+}
+.content1 .footer1 span, .content2 .footer1 span, .content1 .footer3 span, .content2 .footer3 span, .content1 .footer2 span, .content2 .footer2 span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  color: yellow;
+}
+.content1 .footer1 div:hover, .content2 .footer1 div:hover, .content1 .footer2 div:hover, .content2 .footer2 div:hover, .content1 .footer3 div:hover, .content2 .footer3 div:hover {
+  background-color: black;
+}
+
+.content2 {
+  margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-left: 0%;
+    padding: 0;
+  }
+
+  p {
+    padding: 0%;
+  }
+
+  .content1, .content2 {
+    flex-wrap: wrap;
+  }
+  .content1 .footer1, .content1 .footer2, .content1 .footer3, .content2 .footer1, .content2 .footer2, .content2 .footer3 {
+    width: 100%;
+    margin-top: 8%;
+  }
+  .content1 .footer1 img, .content1 .footer2 img, .content1 .footer3 img, .content2 .footer1 img, .content2 .footer2 img, .content2 .footer3 img {
+    width: 100%;
+  }
+  .content1 .footer1 div, .content1 .footer2 div, .content1 .footer3 div, .content2 .footer1 div, .content2 .footer2 div, .content2 .footer3 div {
+    width: 100%;
+  }
+}/*# sourceMappingURL=iosys1.css.map */

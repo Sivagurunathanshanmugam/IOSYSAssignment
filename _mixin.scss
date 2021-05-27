@@ -1,0 +1,11 @@
+@mixin position {
+    position: absolute;
+}
+@mixin display {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+@mixin transform {
+    text-transform:uppercase ;
+}
